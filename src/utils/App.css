@@ -1,0 +1,31 @@
+.navbar-class {
+    position: relative; left: 50%; margin-left: -50px; display: block;
+}
+.create{
+    margin-top: 50px;
+    max-width: 75%;
+    border-radius: 15px;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }

@@ -251,4 +251,6 @@ What we are going to do in series two?
 
 (5) Deploying on Mainnet and with custom ens domain
 
+(6) Answering to <b>Now we need to ask some big and universal questions! How decentralization will help to solve the major issues above listed? And how the second diagram will solve the problem?</b> from chapter 1
+
 <b>If you have any suggestion or change you think it should be made then you can make a pull request or DM me on Github or Discord </b>

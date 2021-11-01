@@ -245,7 +245,7 @@ What we are going to do in series two?
 
 (2) We need major improvement in UI. (I will change the CSS library from Bootstrap Framework to Tailwind CSS utility Library that will enhance the UI and UX. If you have some suggestions about UI or design then please DM)
 
-(3) Getting some real and hard stuff done like gas optimization and interacting with inline assembly or bytecode
+(3) Basic tutorials on gas optimization and interacting with inline assembly or Yul
 
 (4) Writing Test scripts
 

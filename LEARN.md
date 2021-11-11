@@ -8,7 +8,7 @@ In this series, we will create a twitter-like decentralized application that wil
 Prerequisite for this series is solidity and a bit of knowledge about how the ethereum ecosystem works.
  
 Let's get to fundamentals about How Twitter works in real life.
-![Twitter Page](./img/direct.png)
+![Twitter Page](./learn_src/learn_assets/direct.png)
 
 
 When you hit https://twitter.com on the URL bar, It goes to the Twitter Server and shares a ReactJs page from public cloud storage resources available in Twitter's datacenter to you on your browser which is compiled then with javascript engine and rendered on your screen. And according to your preferences, use the functionality and features of Twitter with proper authorization. But what is the problem with the traditional method of sharing and receiving data from Twitter?
@@ -17,9 +17,9 @@ The problem is with our data and its privacy policy. When we signup on Twitter, 
 
 Let's Deep Dive into Twitter's Decentralized Application that we are going to build. 
 
-![Decentralized Twitter Page](./img/blockchain.png)
+![Decentralized Twitter Page](./learn_src/learn_assets/blockchain.png)
 
-<b>Now we need to ask some big and universal questions! How decentralization will help to solve the major issues above listed? And how the second diagram will solve the problem?</b>
+**Now we need to ask some big and universal questions! How decentralization will help to solve the major issues above listed? And how the second diagram will solve the problem?**
 
 This question will be staying along with our journey and will be answered by us in the last section by doing and understanding it.
 
@@ -28,10 +28,9 @@ In our Dapp that will be built by us in this series, we will use the ethereum bl
 ## Intro to Solidity
 
 ***Solidity is an object-oriented programming language for writing smart contracts. It is used for implementing smart contracts on various blockchain platforms, most notably, Ethereum.***
-<p align="right">- Wikipedia</p>
 
 Solidity is an advanced programming language for implementing smart contracts on EVM (Ethereum Virtual Machine). It is highly influenced by Javascript, C++, Python and was created by Gavin Wood. It is a statically typed language where variables are explicitly declared. 
-<p></p>
+
 Solidity itself cannot be understood by Ethereum Virtual Machine, thus converted into EVM assembly or low-level byte code. There are other languages for interacting with EVM like Vyper, LLL, eWasm, and Huff, etc.
 
 Let's get started in building our Twitter's Smart Contract
@@ -41,7 +40,7 @@ We will write our solidity code on web IDE provided by ethereum foundation which
 
 After going to Web Remix IDE or installing Remix IDE on System, you can create a Solidity File called Twitter.sol in your workspace section .
 	
-![File Created on Remix IDE](./img/filecreation.png)
+![File Created on Remix IDE](./learn_src/learn_assets/filecreation.png)
 
 Let's Start the coding section of our smart contract for Twitter Dapp. 
 
@@ -130,7 +129,7 @@ function createTweet(string memory _body) public returns(bool success){
 ```
 In the createTweet function, there is an unsigned variable named `time` which takes the Transaction created time as a UNIX timestamp in its value. A `hash` variable is created which is a  derive primitive type of bytes32 which holds 32 bytes. `hash` variable takes a invoke nested function return.
 
-`keccak256` is a function that computes the Keccak-256 hash of the input. It gives a signature hash of the input data.  <b>`keccak256` shouldn't be confused with sha256. They Both are relatively the same.</b>
+`keccak256` is a function that computes the Keccak-256 hash of the input. It gives a signature hash of the input data.  **`keccak256` shouldn't be confused with sha256. They Both are relatively the same.**
 
 `keccak256` takes another function as input. `abi.encodePacked` takes a list of different data types and return bytes of memory. `abi.encodePacked` performs packed encoding (Packed Encoding also called ASN.1 which takes any kind of data types or cross-platform data and return a single encoded data.) `abi.encodePacked` gives an ambiguous encoding which doesn't mean for anything. 
 
@@ -228,13 +227,13 @@ Let's Play with UI and make it a simple Twitter like Dapp. For UI visit to my gi
 
 [Github Repo](https://github.com/nativeanish/twitterdapps)
 
-![1st image](./img/1.png)
+![1st image](./learn_src/learn_assets/1.png)
 
 
-![2nd image](./img/2.png)
+![2nd image](./learn_src/learn_assets/2.png)
 
 
-![3rd image](./img/3.png)
+![3rd image](./learn_src/learn_assets/3.png)
 
 ## End
 Now we are at the end of this series one. Hope you enjoy the first series by creating a smart contract and playing with the UI. 
@@ -245,12 +244,12 @@ What we are going to do in series two?
 
 (2) We need major improvement in UI. (I will change the CSS library from Bootstrap Framework to Tailwind CSS utility Library that will enhance the UI and UX. If you have some suggestions about UI or design then please DM)
 
-(3) Basic tutorials on gas optimization and interacting with inline assembly or Yul
+(3) Getting some real and hard stuff done like gas optimization and interacting with inline assembly or bytecode
 
 (4) Writing Test scripts
 
-(5) Deploying on Mainnet and with custom ens domain
+(5) Deploying on testnet.
 
-(6) Answering to <b>Now we need to ask some big and universal questions! How decentralization will help to solve the major issues above listed? And how the second diagram will solve the problem?</b> from chapter 1
+(6) Answering to **Now we need to ask some big and universal questions! How decentralization will help to solve the major issues above listed? And how the second diagram will solve the problem?** from chapter 1 
 
-<b>If you have any suggestion or change you think it should be made then you can make a pull request or DM me on Github or Discord </b>
+👋
